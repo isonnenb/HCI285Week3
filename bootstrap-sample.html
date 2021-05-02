@@ -10,7 +10,13 @@
 
     <title>Hello, world!</title>
 	<style>
-		.button-outline {boarder:solid #000000}
+		.button-outline {boarder:solid #000000 2px}
+		.background1 {background-color: #A30002}
+		.background2 {background-color: #1A278F}
+		.background3 {background-color: #199E0F}
+		.white {
+			color: #ffffff
+		}
 	</style>
 	  
   </head>
@@ -18,29 +24,43 @@
 
     <div class="container-fluid">
       	<div class="row">
-       		<div class="col-md-4">
+       		<div class="col-md background1">
          	Column 1
        		</div>
-       		<div class="col-md-4">
+       		<div class="col-md background2 white">
          	Column 2
        		</div>
-       		<div class="col-md-4">
+       		<div class="col-md-2 background3">
          	Column 3
        		</div>
      	</div>
     </div>
 	<div class="row">
-		<div class="col-md-4 text-center">
+		<div class="col-md-6 text-center">
         	<p><strong>False Knees</strong></p>
 	  		<img class="img-fluid" src="https://i.imgur.com/GaRSluM.png" alt="bird comic">
       		</img>
        	</div>
-		<div class="col-md-4 text-center">
+		<div class="col-md-6 text-center">
         	<p><strong>Schadenfreude</strong></p>
-	  		<img class="img-fluid" src="https://i.imgur.com/ws3SSum.mp4" alt="Schadenfreude">
-      		</img>
+	  		<video controls>  
+				<source src="https://i.imgur.com/ws3SSum.mp4" type="video/mp4"/>
+			</video>
        	</div>
 	  	
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md button-outline text-center">
+				<button type="button" class="btn btn-primary">Button One</button>
+			</div>
+			<div class="col-md button-outline text-center">	
+				<button type="button" class="btn btn-secondary">Button Two</button>
+			</div>
+			<div class="col-md button-outline text-center">
+				<button type="button" class="btn btn-success">Button Three</button>
+			</div>
+		</div>
 	</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
